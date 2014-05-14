@@ -5,7 +5,7 @@ Objetos
 Framework para pruebas neuropsicológicas
 
 
-Integrantes:
+#### Integrantes:
 
 Andrés Quintero
 
