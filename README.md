@@ -8,5 +8,7 @@ Framework para pruebas neuropsicológicas
 Integrantes:
 
 Andrés Quintero
+
 Natalia Becerra
+
 Franco Paredes
