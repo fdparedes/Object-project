@@ -9,6 +9,6 @@ Framework para pruebas neuropsicológicas
 
 Andrés Quintero
 
-Natalia Becerra
+Natalia Barrera
 
 Franco Paredes
