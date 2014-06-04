@@ -15,9 +15,13 @@ public:
 	Verificador(int id) :
 			ID(id) {
 	}
+	
+	virtual verificador() {}
+	
 	void getID(int id){
 		ID=id;
-	}
+	} 
+	
 	template<typename T>
 	void comparar(T obj1,T obj2){
 		//Implementar...
