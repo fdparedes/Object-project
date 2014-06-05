@@ -6,50 +6,24 @@
  *      		Natalia Barrera
  *      		Andres Quintero
  */
-#include <iostream>
-#include <string>
+#ifndef _PRUEBA_HPP
+#define _PRUEBA_HPP
 
-class prueba {
-	int ID;
-	std::string Nombre;
-	std::string Descripcion;
-	std::string Objetivos;
+#include <string>
+class Prueba {
+private:
+	std::string nombre;
+	std::string descripcion;
+	std::string objetivos;
 
 public:
-	prueba() {
-		ID = -1;
-		Nombre = "Vacio";
-		Descripcion = "Vacio";
-		Objetivos = "Vacio";
-	}
-
-	void getID(int id) :
-			ID(id) {
-	}
-
-	void getNombre(std::string nombre) :
-			Nombre(nombre) {
-	}
-
-	void getDescripcion(std::string descripcion) :
-			Descripcion(descripcion) {
-	}
-
-	void getObjetivos(std::string objetivos) :
-			Objetivos(objetivos) {
-	}
-
-	template<typename T>
-	void get_pregunta(int id, T obj) {
-		//Implementar...
-	}
-
-	template<typename T>
-	void crearPrueba(T prueba) {
-		//Implementar...
-	}
-
-	virtual ~prueba() {
-	}
+	Prueba();
+	~Prueba();
+	std::string getNombre();
+	std::string getDescripcion();
+	std::string getObjetivos();
+	void setNombre(std::string nombre);
+	void setDescripcion(std::string descripcion);
+	void setObjetivos(std::string objetivos);
 };
-
+#endif
