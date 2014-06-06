@@ -14,7 +14,7 @@ public:
 	~FalsoVerdadero();
 
 	void adicionarPregunta(std::string pregunta,bool respuesta);
-	void cambiarPregunta();
+	void cambiarRespuesta();
 
 
 };
