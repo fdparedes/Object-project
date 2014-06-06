@@ -6,16 +6,16 @@
 
 class FalsoVerdadero{
 private:
-	std::string pregunta;
 	bool respuesta;
 
 public:
 	FalsoVerdadero();
 	~FalsoVerdadero();
 
-	void adicionarPregunta(std::string pregunta,bool respuesta);
+	void adicionarValorRespuesta(bool respuesta);
 	void cambiarRespuesta();
 
+	bool getRespuesta();
 
 };
 
