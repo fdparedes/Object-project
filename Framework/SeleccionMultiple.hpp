@@ -8,7 +8,7 @@ class SeleccionMultiple {
 private:
 	std::vector<std::string> item;
 	std::vector<bool> respuestas;
-	int iterador;
+	int cantidadTotalItems;
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
@@ -16,8 +16,8 @@ public:
 	void cambiarRespuesta(int posicionPregunta, bool respuesta);
 	std::string getItem(int posicionPregunta);
 	bool getValorItem(int posicionPregunta);
-	int getIterador();
-	void incrementarIterador();
+	int getCantidadItems();
+	void incrementarCantidadItems();
 
 };
 
