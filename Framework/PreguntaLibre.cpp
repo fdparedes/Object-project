@@ -1,7 +1,6 @@
 
 #include "PreguntaLibre.hpp"
-//Incompleto..
-//Revisar error..
+
 PreguntaLibre::PreguntaLibre();
 PreguntaLibre::~PreguntaLibre();
 
