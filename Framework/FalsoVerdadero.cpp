@@ -10,7 +10,7 @@ void FalsoVerdadero::adicionarPregunta(std::string pregunta, bool respuesta) {
 	FalsoVerdadero::pregunta = pregunta;
 	FalsoVerdadero::respuesta = respuesta;
 }
-void FalsoVerdadero::cambiarPregunta() {
+void FalsoVerdadero::cambiarRespuesta() {
 	FalsoVerdadero::respuesta != FalsoVerdadero::respuesta;
 }
 
