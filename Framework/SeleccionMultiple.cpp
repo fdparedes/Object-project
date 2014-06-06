@@ -5,8 +5,8 @@ SeleccionMultiple::SeleccionMultiple() {
 }
 SeleccionMultiple::~SeleccionMultiple() {
 }
-void SeleccionMultiple::adicionarPregunta(std::string pregunta,
+void SeleccionMultiple::adicionarRespuesta(std::string item,
 		bool respuesta) {
-	SeleccionMultiple::preguntas.push_back(pregunta);
+	SeleccionMultiple::item.push_back(item);
 	SeleccionMultiple::respuestas.push_back(respuesta);
 }
