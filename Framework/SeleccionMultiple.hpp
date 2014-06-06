@@ -11,7 +11,7 @@ private:
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
-	void adicionarPregunta(std::string pregunta,bool respuesta);
+	void adicionarRespueta(std::string pregunta,bool respuesta);
 
 };
 
