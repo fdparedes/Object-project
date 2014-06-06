@@ -4,7 +4,7 @@
 
 #include <string>
 #include <vector>
-class SeleccionMultiple {
+class SeleccionMultiple:Pregunta {
 private:
 	std::vector<std::string> item;
 	std::vector<bool> respuestas;
