@@ -6,11 +6,13 @@ FalsoVerdadero::FalsoVerdadero() {
 FalsoVerdadero::~FalsoVerdadero() {
 }
 
-void FalsoVerdadero::adicionarPregunta(std::string pregunta, bool respuesta) {
-	FalsoVerdadero::pregunta = pregunta;
+void FalsoVerdadero::adicionarValorRespuesta(bool respuesta) {
 	FalsoVerdadero::respuesta = respuesta;
 }
 void FalsoVerdadero::cambiarRespuesta() {
 	FalsoVerdadero::respuesta != FalsoVerdadero::respuesta;
 }
 
+bool getRespuesta(){
+	return FalsoVerdadero::respuesta;
+}
