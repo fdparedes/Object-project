@@ -11,11 +11,8 @@
 #include "SeleccionMultiple.hpp"
 #include "FalsoVerdadero.hpp"
 #include "PreguntaLibre.hpp"
-//Se debe implementar la hererncia de las demas clases...
-//Faltan...
-//FalsoVerdadero
-//PreguntaLibre
-class Pregunta: SeleccionMultiple {
+
+class Pregunta{
 private:
 	std::string pregunta;
 
