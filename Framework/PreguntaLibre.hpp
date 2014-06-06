@@ -13,7 +13,6 @@ public:
 
 	void adicionarRespuesta(std::string respuesta);
 
-	std::string getPregunta();
 	std::string getRespuesta();
 
 };
