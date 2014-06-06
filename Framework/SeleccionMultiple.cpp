@@ -2,6 +2,7 @@
 #include "SeleccionMultiple.hpp"
 
 SeleccionMultiple::SeleccionMultiple() {
+	
 }
 SeleccionMultiple::~SeleccionMultiple() {
 }
