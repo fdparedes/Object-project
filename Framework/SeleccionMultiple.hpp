@@ -6,12 +6,12 @@
 #include <vector>
 class SeleccionMultiple {
 private:
-	std::vector<std::string> preguntas;
+	std::vector<std::string> item;
 	std::vector<bool> respuestas;
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
-	void adicionarRespueta(std::string pregunta,bool respuesta);
+	void adicionarRespueta(std::string item,bool respuesta);
 
 };
 
