@@ -13,8 +13,8 @@ public:
 	~SeleccionMultiple();
 	void adicionarRespueta(std::string item,bool respuesta);
 	void cambiarRespuesta(int posicionPregunta, bool respuesta);
-	std::string getRespuesta(int posicionPregunta);
-	bool getValorPregunta(int posicionPregunta);
+	std::string getItem(int posicionPregunta);
+	bool getValorItem(int posicionPregunta);
 
 };
 
