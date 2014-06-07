@@ -13,7 +13,7 @@ private:
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
-	void adicionarOpciones(Opciones opcion);
+	void adicionarOpcionOpciones(Opciones opcion);
 	void cambiarItemOpciones(int posicionPregunta, std::string item);
 	void cambiarBoolOpciones(int posicionPregunta, bool valorRespuesta);
 	void eliminarOpcionOpciones(int posicionPregunta);
