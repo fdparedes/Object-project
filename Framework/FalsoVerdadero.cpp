@@ -1,18 +1,16 @@
 
 #include "FalsoVerdadero.hpp"
 
-FalsoVerdadero::FalsoVerdadero() {
+FalsoVerdadero::FalsoVerdadero(bool valor):FalsoVerdadero::respuesta(valor) {
 }
-FalsoVerdadero::~FalsoVerdadero() {
+FalsoVerdadero::virtual ~FalsoVerdadero() {
+	delete(this);
 }
 
-void FalsoVerdadero::adicionarValorRespuesta(bool respuesta) {
-	FalsoVerdadero::respuesta = respuesta;
-}
 void FalsoVerdadero::cambiarRespuesta() {
 	FalsoVerdadero::respuesta != FalsoVerdadero::respuesta;
 }
 
-bool getRespuesta(){
+bool getSeleccion(){
 	return FalsoVerdadero::respuesta;
 }
