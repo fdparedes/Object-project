@@ -6,8 +6,8 @@
 #include <vector>
 class SeleccionMultiple {
 private:
-	std::vector<std::string> item;
-	std::vector<bool> respuestas;
+	string item;
+	bool respuestas;
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
