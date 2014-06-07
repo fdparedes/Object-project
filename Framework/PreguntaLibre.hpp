@@ -6,16 +6,14 @@
 
 class PreguntaLibre:Pregunta{
 private:
-	std::string respuesta;
+	std::string texto;
 public:
-	PreguntaLibre();
+	PreguntaLibre(std::string texto);
 	~PreguntaLibre();
 
-	void adicionarRespuesta(std::string respuesta);
-
-	std::string getRespuesta();
+	void adicionarTexto(std::string texto);
+	std::string getTexto();
 
 };
-
 
 #endif /* PREGUNTALIBRE_HPP_ */
