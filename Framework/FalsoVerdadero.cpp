@@ -7,7 +7,7 @@ FalsoVerdadero::virtual ~FalsoVerdadero() {
 	delete(this);
 }
 
-void FalsoVerdadero::cambiarRespuesta() {
+void FalsoVerdadero::cambiarSeleccion() {
 	FalsoVerdadero::respuesta != FalsoVerdadero::respuesta;
 }
 
