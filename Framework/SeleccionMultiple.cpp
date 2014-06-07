@@ -8,11 +8,6 @@ SeleccionMultiple::virtual~SeleccionMultiple() {
 	delete(this);
 }
 
-	SeleccionMultiple();
-	~SeleccionMultiple();
-	void 
-	bool getBoolItem(int posicionPregunta);
-	
 void SeleccionMultiple::adicionarOpcionOpciones(Opciones opcion) {
 	SeleccionMultiple::opciones.push_back(opcion);
 }
