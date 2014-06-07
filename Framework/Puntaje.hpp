@@ -8,7 +8,7 @@
  */
 
 #include "Verificador.hpp"
-
+template<typename T>
 class Puntaje {
 	int Puntos;
 public:
@@ -18,7 +18,7 @@ public:
 
 	//Este metodo recibe un objeto y retorna algo? o agrega al objeto Puntaje los puntos??
 	//Definir que realiza el metodo...
-	template<typename T>
+	
 	int getPuntaje(T obj) {
 		//Implementar...
 	}
