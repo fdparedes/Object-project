@@ -9,7 +9,7 @@ template <typename Opcion>
 
 class SeleccionMultiple:Pregunta {
 private:
-	std::vector<Opcion> item;
+	std::vector<Opcion> opciones;
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
