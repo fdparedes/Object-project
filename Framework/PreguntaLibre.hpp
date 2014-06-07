@@ -9,7 +9,7 @@ private:
 	std::string texto;
 public:
 	PreguntaLibre(std::string texto);
-	~PreguntaLibre();
+	virtual ~PreguntaLibre();
 
 	void adicionarTexto(std::string texto);
 	std::string getTexto();
