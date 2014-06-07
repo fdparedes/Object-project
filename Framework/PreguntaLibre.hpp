@@ -4,7 +4,7 @@
 
 #include <string>
 
-class PreguntaLibre{
+class PreguntaLibre:Pregunta{
 private:
 	std::string respuesta;
 public:

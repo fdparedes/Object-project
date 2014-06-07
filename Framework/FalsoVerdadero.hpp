@@ -4,7 +4,7 @@
 
 #include <string>
 
-class FalsoVerdadero{
+class FalsoVerdadero:Pregunta{
 private:
 	bool respuesta;
 
