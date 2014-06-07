@@ -1,25 +1,16 @@
-/*
- * Pregunta.hpp
- *
- *  Created on: 4/06/2014
- *      Author: andres
- */
-
 #ifndef PREGUNTA_HPP_
 #define PREGUNTA_HPP_
+
 #include <string>
-#include "SeleccionMultiple.hpp"
-#include "FalsoVerdadero.hpp"
-#include "PreguntaLibre.hpp"
+template <typename TipoRespuesta>
 
 class Pregunta{
 private:
-	std::string pregunta;
-
+	std::string pregunta
+	TipoRespuesta tipoRespuesta;
 public:
-	Pregunta();
+	Pregunta(std::string texto);
 	~Pregunta();
-	void tipoRespuesta(int respuesta);
 };
 
 #endif /* PREGUNTA_HPP_ */
