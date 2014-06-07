@@ -2,20 +2,19 @@
 #ifndef FALSOVERDADERO_HPP_
 #define FALSOVERDADERO_HPP_
 
-#include <string>
+#include "Pregunta.hpp"
 
 class FalsoVerdadero:Pregunta{
 private:
 	bool respuesta;
 
 public:
-	FalsoVerdadero();
-	~FalsoVerdadero();
+	FalsoVerdadero(bool valor);
+	virtual ~FalsoVerdadero();
 
-	void adicionarValorRespuesta(bool respuesta);
 	void cambiarRespuesta();
 
-	bool getRespuesta();
+	bool getSeleccion();
 
 };
 
