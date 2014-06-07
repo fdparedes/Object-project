@@ -13,10 +13,12 @@ private:
 public:
 	SeleccionMultiple();
 	~SeleccionMultiple();
-	void adicionarOpcion(Opciones opcion);
-	void cambiarBoolOpcion(int posicionPregunta, bool valorRespuesta);
-	std::string getItem(int posicionPregunta);
-	bool getBoolItem(int posicionPregunta);
+	void adicionarOpciones(Opciones opcion);
+	void cambiarItemOpciones(int posicionPregunta, std::string item);
+	void cambiarBoolOpciones(int posicionPregunta, bool valorRespuesta);
+	void eliminarOpcionOpciones(int posicionPregunta);
+	std::string getItemOpciones(int posicionPregunta);
+	bool getBoolOpciones(int posicionPregunta);
 
 };
 
