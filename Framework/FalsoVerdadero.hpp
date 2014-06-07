@@ -12,7 +12,7 @@ public:
 	FalsoVerdadero(bool valor);
 	virtual ~FalsoVerdadero();
 
-	void cambiarRespuesta();
+	void cambiarSeleccion();
 
 	bool getSeleccion();
 
