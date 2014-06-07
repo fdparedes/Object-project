@@ -4,8 +4,6 @@
 #include <string>
 #include <vector>
 
-template <typename Opcion>
-
 class Opcion
 {
 private:
