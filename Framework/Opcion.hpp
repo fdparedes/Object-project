@@ -2,18 +2,16 @@
 #define OPCION_HPP_
 
 #include <string>
-#include <vector>
 
-class Opcion
-{
-private:
+class Opcion {
+protected:
 	std::string item;
 	bool valor;
 public:
-	Opcion();
-	virtual ~Opcion();
-	void cambiarBoolOpcion(bool);
-	void cambiarItemOpcion(std::string);
+	Opcion(std::string item,bool valor);
+	~Opcion();
+	void cambiarBoolOpcion();
+	void cambiarItemOpcion(std::string item);
 	std::string getItemOpcion();
 	bool getValorOpcion();
 

@@ -10,11 +10,12 @@
 class Solucion{
 	int ID;
 public:
-	Solucion(){
+	Solucion();
+	~Solucion();/*{
 		ID=-1;
 	}
 	template <typename T>
 	void compara(int id,T objP,T objS){
 
-	}
+	}*/
 };

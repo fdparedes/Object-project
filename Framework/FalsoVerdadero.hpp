@@ -4,17 +4,20 @@
 
 #include "Pregunta.hpp"
 
-class FalsoVerdadero:Pregunta{
+class FalsoVerdadero:public Pregunta{
 private:
 	bool respuesta;
 
 public:
-	FalsoVerdadero(bool valor);
-	virtual ~FalsoVerdadero();
+	FalsoVerdadero(std::string pregunta,bool valor);
+    ~FalsoVerdadero();
 
 	void cambiarSeleccion();
 
 	bool getSeleccion();
+	int contarAciertos(FalsoVerdadero respuesta);
+
+	void imprimirTerminal();
 
 };
 

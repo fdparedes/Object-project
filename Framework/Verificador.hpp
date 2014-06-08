@@ -1,29 +1,14 @@
-/*
- * Verificador.hpp
- *
- *  Created on: 30/05/2014
- *      Author: Franco Paredes
- *      		Natalia Barrera
- *      		Andres Quintero
- */
-#include "Solucion.hpp"
-#include "Puntaje.hpp"
+
+#ifndef VERIFICADOR_HPP_
+#define VERIFICADOR_HPP_
 
 class Verificador {
-	int ID;
 public:
-	Verificador(int id) :
-			ID(id) {
-	}
-	
-	virtual verificador() {}
-	
-	void getID(int id){
-		ID=id;
-	} 
-	
-	template<typename T>
-	void comparar(T obj1,T obj2){
-		//Implementar...
-	}
+	Verificador();
+	~Verificador();
+
+	template <typename T>
+	bool comparar(T obj1,T obj2);
+
 };
+#endif
