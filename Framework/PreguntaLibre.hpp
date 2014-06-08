@@ -3,13 +3,14 @@
 #define PREGUNTALIBRE_HPP_
 
 #include <string>
+#include "Pregunta.hpp"
 
-class PreguntaLibre:Pregunta{
+class PreguntaLibre: public Pregunta{
 private:
 	std::string texto;
 public:
-	PreguntaLibre(std::string texto);
-	virtual ~PreguntaLibre();
+	PreguntaLibre(std::string pregunta,std::string texto);
+	~PreguntaLibre();
 
 	void adicionarTexto(std::string texto);
 	std::string getTexto();

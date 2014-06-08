@@ -1,28 +1,19 @@
-/*
- * Puntaje.hpp
- *
- *  Created on: 30/05/2014
- *      Author: Franco Paredes
- *      		Natalia Barrera
- *      		Andres Quintero
- */
 
-#include "Verificador.hpp"
-template<typename T>
+#ifndef PUNTAJE_HPP_
+#define PUNTAJE_HPP_
+
 class Puntaje {
+private:
 	int Puntos;
 public:
-	Puntaje(int puntos) :
-			Puntos(puntos) {
-	}
+	Puntaje() ;
 
 	//Este metodo recibe un objeto y retorna algo? o agrega al objeto Puntaje los puntos??
 	//Definir que realiza el metodo...
 	
-	int getPuntaje(T obj) {
-		//Implementar...
-	}
+	int getPuntaje() ;
 	//Este metodo suma los puntos qie se agreguen? o retorna un puntaje?
-	void Resultado(int puntaje) {
-	}
-}
+	void Resultado(int puntaje) ;
+};
+
+#endif

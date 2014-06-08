@@ -1,16 +1,16 @@
 
 #include "PreguntaLibre.hpp"
 
-PreguntaLibre::PreguntaLibre(std::string texto):PreguntaLibre::texto(texto){
+PreguntaLibre::PreguntaLibre(std::string pregunta,std::string texto):Pregunta(pregunta) {
+	PreguntaLibre::texto = texto;
 }
-PreguntaLibre::virtual~PreguntaLibre(){
-	delete(this);
+PreguntaLibre::~PreguntaLibre() {
 }
 
 void PreguntaLibre::adicionarTexto(std::string texto) {
-	PreguntaLibre::texto=texto;
+	PreguntaLibre::texto = texto;
 }
 
-std::string PreguntaLibre::getRespuesta() {
+std::string PreguntaLibre::getTexto() {
 	return PreguntaLibre::texto;
 }

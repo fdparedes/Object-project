@@ -2,15 +2,15 @@
 #define PREGUNTA_HPP_
 
 #include <string>
-template <typename TipoRespuesta>
 
 class Pregunta{
-private:
-	std::string pregunta
-	TipoRespuesta tipoRespuesta;
+protected:
+	std::string pregunta;
 public:
-	Pregunta(std::string texto);
+	Pregunta(std::string pregunta);
 	~Pregunta();
+
+	std::string getPregunta();
 };
 
 #endif /* PREGUNTA_HPP_ */
