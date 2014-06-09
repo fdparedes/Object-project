@@ -8,6 +8,8 @@ Trail_Making_A_B::Trail_Making_A_B(string pregunta, vector<string> elementos,
 	Trail_Making_A_B::elementos = elementos;
 	Trail_Making_A_B::respuesta = respuesta;
 	Trail_Making_A_B::veracidad = false;
+	Trail_Making_A_B::tiempo = 0;
+
 }
 
 Trail_Making_A_B::~Trail_Making_A_B() {

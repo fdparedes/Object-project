@@ -24,13 +24,14 @@ public:
 	void setElementos(vector<string> elementos);
 	void setRespuesta(vector<string> respuesta);
 	void setTiempo(int tiempo);
-	int getTiempo();
 	void anadirRespuestaUsuario(vector<string> respuestaUsuario);
 	void imprimirRespuestaUsuario();
 	void eliminarOpcion(int posicion);
 	void checkRespuesta();
 	void imprimirElementosTerminal();
 	void intercambiarRespuestaUsuario(int posicion1, int posicion2);
+
+	int getTiempo();
 	int cantidadElementos();
 	bool getVeracidad();
 

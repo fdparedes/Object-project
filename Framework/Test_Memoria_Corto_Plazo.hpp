@@ -2,10 +2,10 @@
 #define _TEST_MEMORIA_CORTO_PLAZO_HPP
 
 #include <string>
+#include "Pregunta.hpp"
 using std::string;
 
-class Test_Memoria_Corto_Plazo
-{
+class Test_Memoria_Corto_Plazo {
 private:
 	string elementos[5][5];
 	string respuesta[5][5];

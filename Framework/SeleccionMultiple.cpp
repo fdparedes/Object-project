@@ -75,7 +75,7 @@ void SeleccionMultiple::cambiarOpcion() {
 		imprimirTerminal();
 		std::cout << "***********************" << std::endl;
 		std::cout << "(1) Marcar una opcion. " << std::endl;
-		std::cout << "(2) Salir. " << std::endl;
+		std::cout << "(2) Continuar. " << std::endl;
 		std::cout << "***********************" << std::endl;
 		std::cout << "Seleccion: ";
 		std::cin >> h;

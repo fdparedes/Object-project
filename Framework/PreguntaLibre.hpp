@@ -4,6 +4,7 @@
 
 #include <string>
 #include "Pregunta.hpp"
+
 //Pregunta libre es un tipo de respuesta que hereda de pregunta
 //contiene como respuesta un texto que haya sido ingresado por el usuario
 //No contiene el metodo verificar respuesta porque depende de un psicologo

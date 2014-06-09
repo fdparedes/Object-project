@@ -13,6 +13,8 @@ public:
 	~Pregunta();
 	//retorna la pregunta que esta contenida aqui
 	std::string getPregunta();
+	//Modifica la pregunta que haya sido guardada anteriormente
+	void setPregunta(std::string pregunta);
 };
 
 #endif /* PREGUNTA_HPP_ */
