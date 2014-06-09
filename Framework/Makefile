@@ -35,5 +35,3 @@ Trail_Making_A_B.o:
 
 clean:
 	-rm -f *.o
-
-
