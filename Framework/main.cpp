@@ -61,7 +61,7 @@ int main() {
 
 	int aciertos = p1.contarAciertos(r1);
 
-	std::cout << "En seleccion multiple acerto:" << aciertos << " veces"
+	std::cout << "En seleccion multiple acerto: " << aciertos << " veces"
 			<< std::endl;
 
 	aciertos = p2.contarAciertos(r2);
