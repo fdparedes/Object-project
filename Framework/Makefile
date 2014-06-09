@@ -33,7 +33,6 @@ Test_Memoria_Corto_Plazo.o:
 Trail_Making_A_B.o:
 	g++ -c Trail_Making_A_B.cpp
 
-
 clean:
 	-rm -f *.o
 
