@@ -10,121 +10,47 @@
 #include "Trail_Making_A_B.hpp"
 
 int main() {
-	/*
-	SeleccionMultiple p1("Cual es la capital del valle?");
-	SeleccionMultiple r1("respuesta de p1");
-	int h;
-
-	p1.adicionarOpcionOpciones("cali", true);
-	r1.adicionarOpcionOpciones("cali",false);
-
-	p1.adicionarOpcionOpciones("Armenia", false);
-	r1.adicionarOpcionOpciones("Armenia", false);
-
-	p1.adicionarOpcionOpciones("Tulua", false);
-	r1.adicionarOpcionOpciones("Tulua", false);
-
-	p1.adicionarOpcionOpciones("Colombia", false);
-	r1.adicionarOpcionOpciones("Colombia", false);
-
-	while (true) {
-		std::cout << p1.getPregunta() << std::endl;
-		r1.imprimirTerminal();
-		h = -1;
-		std::cout << "***********************"<<std::endl;
-		std::cout << "(1) Marcar una opcion. "<<std::endl;
-		std::cout << "(2) Salir. "<<std::endl;
-		std::cout << "***********************"<<std::endl;
-		std::cout << "Seleccion: ";
-		std::cin >> h;
-		if (h==1){
-			std::cout << "Que respuesta desea marcar: ";
-			std::cin >> h;
-			r1.cambiarBoolOpciones(h);
-		} else
-			break;
-	}
-
-	FalsoVerdadero p2("Lopez es Crack?",true);
-	FalsoVerdadero r2("Lopez es Crack?",false);
-	while (true) {
-		std::cout << p2.getPregunta() << std::endl;
-		r2.imprimirTerminal();
-		h = -1;
-		std::cout << "(1) Cambiar de opcion. " << std::endl;
-		std::cout << "(2) Salir. "<<std::endl;
-		std::cout << "Seleccion: ";
-		std::cin >> h;
-		if (h == 1) {
-			r2.cambiarSeleccion();
-		} else
-			break;
-	}
-
-	int aciertos = p1.contarAciertos(r1);
-
-	std::cout << "En seleccion multiple acerto:" << aciertos << " veces"
-			<< std::endl;
-
-	aciertos = p2.contarAciertos(r2);
-
-	if (aciertos == 1) {
-		std::cout << "FalsoVerdadero:Acerto" << std::endl;
-	} else {
-		std::cout << "FalsoVerdadero:No acerto" << std::endl;
-	}
-
-	Restricciones tiempo;
-	std::cout<<"Tiene 10 Seg para responderla siguiente prueba."<<std::endl;
-	std::cout<<"Ingresa un numero para continuar.";
-	std::cin>>h;
-	std::cout<<"Ingrese un entero que:(10<x<12): ";
-	tiempo.iniciarTiempo();
-	std::cin>>h;
-	tiempo.terminarTiempo();
-	if(tiempo.diferenciaTiempo()>10)
-		std::cout<<"Erroneo! Excedio el tiempo."<<std::endl;
-	else
-		if(h==11)
-			std::cout<<"Muy bien:Cumplio el tiempo y la respuesta es correcta"<<std::endl;
-		else
-			std::cout<<"Error el numero era 11"<<std::endl;
-
-	std::cout<<"Se demoro en responder "<<tiempo.diferenciaTiempo()<<" Segundos."<<std::endl;
-	*/
-
 	int h=1;
-	std::cout<<"Bienvenido."<<std::endl;
-	std::cout<<"*************************"<<std::endl;
-	std::cout<<"* (1) Test de memoria.  *"<<std::endl;
-	std::cout<<"* (2) Test de atencion. *"<<std::endl;
-	std::cout<<"*************************"<<std::endl;
+
+	std::cout<<"***************************************"<<std::endl;
+	std::cout<<"*           Bienvenido.               *"<<std::endl;
+	std::cout<<"* (1) Test de inteligencia infantil.  *"<<std::endl;
+	std::cout<<"* (2) Test trail making.                     *"<<std::endl;
+	std::cout<<"***************************************"<<std::endl;
 	std::cout<<"Seleccione un test: ";
 	std::cin>>h;
 	while (h != 1 && h != 2) {
-		std::cout << "Error seleccione una opcion valida\n";
-		std::cout<<"*************************"<<std::endl;
-		std::cout<<"* (1) Test de memoria.  *"<<std::endl;
-		std::cout<<"* (2) Test de atencion. *"<<std::endl;
-		std::cout<<"*************************"<<std::endl;
+		std::cout<<"***************************************"<<std::endl;
+		std::cout<<"*  Error seleccione una opcion valida *\n";
+		std::cout<<"* (1) Test de inteligencia infantil.  *"<<std::endl;
+		std::cout<<"* (2) Test trail making. 					  *"<<std::endl;
+		std::cout<<"***************************************"<<std::endl;
 		std::cout << "Seleccione un test: " << std::endl;
 		std::cin >> h;
 	}
+
+	//Switch para seleccionar el tipo de test que desea hacer el usuario
 	switch (h) {
 	case 1: {
+		//Se declaran el nombre, descripcion y objetivos de la prueba
 		std::string nombre = "Test de inteligencia de infancia\n";
 		std::string descripcion =
 				"Los ninos de 8 a 11 anos de edad deben responder\n"
 						"solos las siguientes preguntas.\n";
 		std::string objetivos = "N/A\n";
-
+		//Se crea la prueba
 		Prueba prueba(nombre, descripcion, objetivos);
-
-		std::string Enunciado =
-				"Cuenta todas las apariciones del numero 8:\n(860688606866066800680688608060086806680860868)";
+		//Se crean las diferentes preguntas que contienen diferentes tipos de respuesta
+		//Se crea un enunciado
+		std::string Enunciado ="Cuenta todas las apariciones del numero 8:\n"
+							"(860688606866066800680688608060086806680860868)";
+		//Se crea pregunta y respuesta
+		//en la pregunta estan las respuestas correctas
+		//en respuesta se ingresara lo que el usuario responda para verificar el resultado
 		SeleccionMultiple p1(Enunciado);
 		SeleccionMultiple r1(Enunciado);
 
+		//Adicinamos los items que contiene esta pregunta
 		p1.adicionarOpcionOpciones("13 apariciones", false);
 		r1.adicionarOpcionOpciones("13 apariciones", false);
 
@@ -203,8 +129,12 @@ int main() {
 		p4.adicionarOpcionOpciones("Ninguna de las anteriores.", true);
 		r4.adicionarOpcionOpciones("Ninguna de las anteriores.", false);
 
+		//Preguntas de tipo FalsoVerdadero
 		Enunciado = "La siguientes dos series de letras son iguales? \n"
 				"\tcomvewpuvyy\t-\tcomvewpueyy";
+		//Se construye la pregunta con su valor de respuesta
+		//se construye la respuesta con cualquier valor
+		//Esto con el fin de que el usuario modifique la respuesta y marque la correcta
 		FalsoVerdadero p5(Enunciado, false);
 		FalsoVerdadero r5(Enunciado, false);
 
@@ -213,17 +143,23 @@ int main() {
 		FalsoVerdadero p6(Enunciado, true);
 		FalsoVerdadero r6(Enunciado, false);
 
+		//Anteriormente se crearon las pruebas apartir de este momento se interactua
+		//con el usuario
 		std::cout << "Nombre de la prueba: " << prueba.getNombre();
 		std::cout << "Descripcion de la prueba: " << prueba.getDescripcion();
 		std::cout << "Objetivos de la prueba: " << prueba.getObjetivos();
 		std::cout << "Ingrese un numero para continuar...";
 		std::cin >> h;
+		//En esta etapa se tomaran los cambios que hace el usuario
+		//Con el metodo cambiar opcion que dependiendo del tipo de pregunta
+		//Realiza una accion.
 		r1.cambiarOpcion();
 		r2.cambiarOpcion();
 		r3.cambiarOpcion();
 		r4.cambiarOpcion();
 		r5.cambiarOpcion();
 		r6.cambiarOpcion();
+		//Posteriormente se evaluan los resultados de cada pregunta
 		h = 1;
 		if (p1.verificarRespuesta(r1) == true) {
 			std::cout << "Correcto" << h << std::endl;
@@ -273,14 +209,21 @@ int main() {
 			std::cout << "Incorrecto" << h << std::endl;
 		}
 
+		//Se imprimen los resultados
 		std::cout << "El total de puntos es:" << prueba.getPuntos();
 		break;
 	}
 	case 2: {
 		Restricciones tiempo;
 		std::string nombre = "Trail Making A - B\n";
-		std::string descripcion ="N/A\n";
-		std::string objetivos = "N/A\n";
+		std::string descripcion ="Es un test creado por Parthington en 1938.\n"
+				"La efectividad de esta prueba para discriminar sujetos con dano\n"
+				"cerebral del resto de la poblacion fue reportada en una gran\n"
+				"cantidad de trabajos, por ese motivo paso a formar parte de las\n"
+				"baterias de pruebas nueropsicologicas.\n";
+		std::string objetivos = "Evaluar la velocidad de ubicacion visual, la atencion,\n"
+				"la flexibilidad mental, la memoria de trabajo y la funcion motora.\n"
+				"Es sensible a dano frontal\n";
 
 		Prueba prueba(nombre, descripcion, objetivos);
 		std::string pregunta1="Ordene las siguientes letras en orden alfabetico.\n";
@@ -304,7 +247,7 @@ int main() {
 		std::cout << "Objetivos de la prueba: " << prueba.getObjetivos();
 		std::cout << "Ingrese un numero para continuar...";
 		std::cin >> h;
-		std::cout << "En estas pruebas se evaluara el tiempo";
+		std::cout << "En estas pruebas se evaluara el tiempo\n";
 		std::cout << "Ingrese un numero para continuar...";
 		std::cin >> h;
 		Trail_Making_A_B p1(pregunta1,Enunciado,RespuestaValidas);

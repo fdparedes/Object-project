@@ -11,4 +11,8 @@ std::string Pregunta::getPregunta(){
 	return Pregunta::pregunta;
 }
 
+//Modifica la pregunta que haya sido guardada anteriormente
+void Pregunta::setPregunta(std::string pregunta){
+	Pregunta::pregunta=pregunta;
+}
 
