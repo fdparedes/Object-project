@@ -2,18 +2,21 @@
 #ifndef PUNTAJE_HPP_
 #define PUNTAJE_HPP_
 
-class Puntaje {
+//Clase que contiene los puntos de una prueba
+class Puntaje{
 private:
-	int Puntos;
+	int puntos;
 public:
-	Puntaje() ;
-
-	//Este metodo recibe un objeto y retorna algo? o agrega al objeto Puntaje los puntos??
-	//Definir que realiza el metodo...
-	
-	int getPuntaje() ;
-	//Este metodo suma los puntos qie se agreguen? o retorna un puntaje?
-	void Resultado(int puntaje) ;
+	//Inicializa el puntaje en 0
+	Puntaje();
+	~Puntaje();
+	//Suma la cantidad de puntos que el programador considere necesarios
+	void sumarPuntos(int puntos);
+	//Resta la cantidad de puntos que el programador considere necesarios
+	void restarPuntos(int puntos);
+	//Retorna la cantidad de puntos que contiene la prueba hasta el momento
+	int getPuntos();
 };
 
-#endif
+
+#endif /* PUNTAJE_HPP_ */
