@@ -26,7 +26,8 @@ int FalsoVerdadero::contarAciertos(FalsoVerdadero respuesta) {
 	int flag=0;
 	if (FalsoVerdadero::respuesta == true && true == respuesta.getSeleccion()) {
 		flag=1;
-	} else if (FalsoVerdadero::respuesta == false && false == respuesta.getSeleccion()) {
+	} else if (FalsoVerdadero::respuesta == false
+			&& false == respuesta.getSeleccion()) {
 		flag = 1;
 	}
 	return flag;

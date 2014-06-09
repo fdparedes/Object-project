@@ -9,7 +9,7 @@ SeleccionMultiple::SeleccionMultiple(std::string pregunta) :
 }
 
 SeleccionMultiple::~SeleccionMultiple() {
-}
+ }
 
 //Se crea una opcion de respuesta y se le asigna su item y su valor de verdad
 //Se agrega al vector
@@ -44,10 +44,12 @@ int SeleccionMultiple::contarAciertos(SeleccionMultiple respuesta) {
 	int tamanoOpciones = SeleccionMultiple::opciones.size()-1;
 
 	for (int i = 0; i <= tamanoOpciones; i++) {
-		if (SeleccionMultiple::opciones[i].getValorOpcion() == true && respuesta.getBoolOpciones(i) == true){
+		if (SeleccionMultiple::opciones[i].getValorOpcion() == true
+				&& respuesta.getBoolOpciones(i) == true){
 			aciertos++;
 		}
-		else if (SeleccionMultiple::opciones[i].getValorOpcion() == false && respuesta.getBoolOpciones(i) == false){
+		else if (SeleccionMultiple::opciones[i].getValorOpcion() == false
+				&& respuesta.getBoolOpciones(i) == false){
 			aciertos++;
 		}
 	}
