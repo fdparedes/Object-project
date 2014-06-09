@@ -12,7 +12,7 @@ public:
 	//Definir que realiza el metodo...
 	
 	int getPuntaje() ;
-	//Este metodo suma los puntos qie se agreguen? o retorna un puntaje?
+	//Este metodo suma los puntos que se agreguen? o retorna un puntaje?
 	void Resultado(int puntaje) ;
 };
 
