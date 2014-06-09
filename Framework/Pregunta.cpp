@@ -2,7 +2,7 @@
 #include "Pregunta.hpp"
 
 Pregunta::Pregunta(std::string pregunta) {
-	Pregunta::pregunta=pregunta;
+	Pregunta::pregunta = pregunta;
 }
 Pregunta::~Pregunta() {
 }
